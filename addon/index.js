@@ -141,11 +141,7 @@ export function getName(code, lang) {
  * @return hash
  */
 export function getNames(lang) {
-  try {
-    return langs[lang.toLowerCase()];
-  } catch (err) {
-    return {};
-  }
+  return langs[lang.toLowerCase()] || {};
 };
 
 /*

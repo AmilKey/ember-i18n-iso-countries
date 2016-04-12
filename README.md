@@ -1,26 +1,97 @@
 # Ember-i18n-iso-countries
 
-This README outlines the details of collaborating on this Ember addon.
+i18n for ISO 3166-1 country codes. We support Alpha-2, Alpha-3 and Numeric codes from http://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements
 
-## Installation
+## Code to Country
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+### Get the name of a country by it's ISO 3166-1 Alpha-2, Alpha-3 or Numeric code
 
-## Running
+`````javascript
+import { getName } from 'ember-i18n-iso-countries';
+console.log("US (Alpha-2) => " + getName("US", "en")); // United States
+console.log("US (Alpha-2) => " + getName("US", "de")); // Vereinigte Staaten von Amerika
+console.log("USA (Alpha-3) => " + getName("USA", "en")); // United States
+console.log("USA (Numeric) => " + getName("840", "en")); // United States
+`````
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+### Get all names by their ISO 3166-1 Alpha-2 code
 
-## Running Tests
+`````javascript
+import { getNames } from 'ember-i18n-iso-countries';
+console.log(getNames("en")); // { 'AF': 'Afghanistan', 'AL': 'Albania', [...], 'ZM': 'Zambia', 'ZW': 'Zimbabwe' }
+`````
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+### Supported languages
 
-## Building
+* `en`: english
 
-* `ember build`
+### Country to Code
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+`````javascript
+import { getAlpha2Code } from 'ember-i18n-iso-countries';
+console.log("United States => " + getAlpha2Code('United States', 'en')); // US
+`````
+
+## Codes
+
+### Convert Alpha-3 to Alpha-2 code
+
+`````javascript
+import { alpha3ToAlpha2 } from 'ember-i18n-iso-countries';
+console.log("USA (Alpha-3) => " + alpha3ToAlpha2("USA") + " (Alpha-2)"); // United States
+`````
+
+### Convert Numeric to Alpha-2 code
+
+`````javascript
+import { numericToAlpha2 } from 'ember-i18n-iso-countries';
+console.log("840 (Numeric) => " + numericToAlpha2("840") + " (Alpha-2)"); // United States
+`````
+
+### Convert Alpha-2 to Alpha-3 coe
+`````javascript
+import { alpha2ToAlpha3 } from 'ember-i18n-iso-countries';
+console.log("DE (Alpha-2) => " + alpha2ToAlpha3("DE") + " (Alpha-3)"); // Germany
+`````
+
+### Convert Numeric to Alpha-3 code
+
+`````javascript
+import { numericToAlpha3 } from 'ember-i18n-iso-countries';
+console.log("840 (Numeric) => " + numericToAlpha3("840") + " (Alpha-3)"); // United States
+`````
+
+### Convert Alpha-3 to Numeric code
+
+`````javascript
+import { alpha3ToNumeric } from 'ember-i18n-iso-countries';
+console.log(alpha3ToNumeric("SWE")); // 752
+`````
+
+### Convert Alpha-2 to Numeric code
+
+`````javascript
+import { alpha2ToNumeric } from 'ember-i18n-iso-countries';
+console.log(alpha2ToNumeric("SE")); // 752
+`````
+
+### Get all Alpha-2 codes
+
+`````javascript
+import { getAlpha2Codes } from 'ember-i18n-iso-countries';
+console.log(getAlpha2Codes()); // { 'AF': 'AFG', 'AX': 'ALA', [...], 'ZM': 'ZMB', 'ZW': 'ZWE' }
+`````
+
+### Get all Alpha-3 codes
+
+`````javascript
+import { getAlpha3Codes } from 'ember-i18n-iso-countries';
+console.log(getAlpha3Codes()); // { 'AFG': 'AF', 'ALA': 'AX', [...], 'ZMB': 'ZM', 'ZWE': 'ZW' }
+`````
+
+### Get all Numeric codes
+
+`````javascript
+import { getNumericCodes } from 'ember-i18n-iso-countries';
+console.log(getNumericCodes()); // { '4': 'AF', '8': 'AL', [...], '887': 'YE', '894': 'ZM' }
+`````
