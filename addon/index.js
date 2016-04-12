@@ -29,7 +29,6 @@ CODES.forEach((codeInformation)=> {
 export function alpha3ToAlpha2(code) {
   return alpha3[code];
 }
-// exports.alpha3ToAlpha2 = alpha3ToAlpha2;
 
 /*
  * @param code Alpha-2 code
@@ -38,7 +37,6 @@ export function alpha3ToAlpha2(code) {
 export function alpha2ToAlpha3(code) {
   return alpha2[code];
 }
-// exports.alpha2ToAlpha3 = alpha2ToAlpha3;
 
 /*
  * @param code Alpha-3 code
@@ -47,7 +45,6 @@ export function alpha2ToAlpha3(code) {
 export function alpha3ToNumeric(code) {
   return invertedNumeric[alpha3ToAlpha2(code)];
 }
-// exports.alpha3ToNumeric = alpha3ToNumeric;
 
 /*
  * @param code Alpha-2 code
@@ -56,7 +53,6 @@ export function alpha3ToNumeric(code) {
 export function alpha2ToNumeric(code) {
   return invertedNumeric[code];
 }
-// exports.alpha2ToNumeric = alpha2ToNumeric;
 
 /*
  * @param code Numeric code
@@ -65,7 +61,6 @@ export function alpha2ToNumeric(code) {
 export function numericToAlpha3(code) {
   return alpha2ToAlpha3(numeric[parseInt(code, 10)]);
 }
-// exports.numericToAlpha3 = numericToAlpha3;
 
 /*
  * @param code Numeric code
@@ -74,7 +69,6 @@ export function numericToAlpha3(code) {
 export function numericToAlpha2(code) {
   return numeric[parseInt(code, 10)];
 }
-// exports.numericToAlpha2 = numericToAlpha2;
 
 /*
  * @param code ISO 3166-1 alpha-2, alpha-3 or numeric code
@@ -97,7 +91,6 @@ export function toAlpha3(code) {
   }
   return undefined;
 }
-// exports.toAlpha3 = toAlpha3;
 
 /*
  * @param code ISO 3166-1 alpha-2, alpha-3 or numeric code
@@ -120,7 +113,6 @@ export function toAlpha2(code) {
   }
   return undefined;
 }
-// exports.toAlpha2 = toAlpha2;
 
 /*
  * @param code ISO 3166-1 alpha-2, alpha-3 or numeric code

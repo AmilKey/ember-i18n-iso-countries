@@ -1,4 +1,5 @@
 # Ember-i18n-iso-countries
+Ember.js Addon Wrapper for the [i18n-iso-countries](https://github.com/michaelwittig/node-i18n-iso-countries).
 
 i18n for ISO 3166-1 country codes. We support Alpha-2, Alpha-3 and Numeric codes from http://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements
 
