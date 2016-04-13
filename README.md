@@ -1,7 +1,13 @@
 # Ember-i18n-iso-countries
+[![npm version](https://badge.fury.io/js/ember-countries.svg)](https://badge.fury.io/js/ember-i18n-iso-countries)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-countries.svg)](http://emberobserver.com/addons/ember-i18n-iso-countries)
 Ember.js Addon Wrapper for the [i18n-iso-countries](https://github.com/michaelwittig/node-i18n-iso-countries).
 
 i18n for ISO 3166-1 country codes. We support Alpha-2, Alpha-3 and Numeric codes from http://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements
+
+## Installation
+
+* `ember install ember-i18n-iso-countries`
 
 ## Code to Country
 
@@ -103,3 +109,19 @@ console.log(getAlpha3Codes()); // { 'AFG': 'AF', 'ALA': 'AX', [...], 'ZMB': 'ZM'
 import { getNumericCodes } from 'ember-i18n-iso-countries';
 console.log(getNumericCodes()); // { '4': 'AF', '8': 'AL', [...], '887': 'YE', '894': 'ZM' }
 `````
+
+## Running Tests
+
+* `ember test`
+* `ember test --server`
+
+
+## Building
+
+* `ember build`
+
+For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+
+##Contributing
+
+PRs welcome!
