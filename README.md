@@ -25,6 +25,13 @@ console.log(getNames("en")); // { 'AF': 'Afghanistan', 'AL': 'Albania', [...], '
 ### Supported languages
 
 * `en`: english
+* `de`: german
+* `nl`: dutch
+* `fr`: french
+* `sv`: swedish
+* `es`: spanish
+* `pt`: portuguese
+* `fi`: finnish
 
 ### Country to Code
 

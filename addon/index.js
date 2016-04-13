@@ -1,8 +1,22 @@
 import { CODES } from './codes';
+import DE from './langs/de';
 import EN from './langs/en';
+import ES from './langs/es';
+import FI from './langs/fi';
+import FR from './langs/fr';
+import NL from './langs/nl';
+import PT from './langs/pt';
+import SV from './langs/sv';
 
 const langs = {
+  "de" : DE,
   "en" : EN,
+  "fr" : FR,
+  "nl" : NL,
+  "sv" : SV,
+  "es" : ES,
+  "pt" : PT,
+  "fi" : FI
 };
 
 
