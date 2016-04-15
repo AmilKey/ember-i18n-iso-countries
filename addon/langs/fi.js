@@ -258,4 +258,4 @@ export default {
   "VI": "Yhdysvaltain Neitsytsaaret",
   "UM": "Yhdysvaltain pienet erillissaaret",
   "ZW": "Zimbabwe"
-}
+};

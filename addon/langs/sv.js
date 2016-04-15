@@ -251,4 +251,4 @@ export default {
   "ZA": "Sydafrika",
   "ZM": "Zambia",
   "ZW": "Zimbabwe"
-}
+};

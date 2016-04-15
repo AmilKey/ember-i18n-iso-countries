@@ -248,4 +248,4 @@ export default {
   "RS": "Servië",
   "SX": "Sint Maarten (Nederlands deel)",
   "SS": "Zuid-Soedan"
-}
+};

@@ -140,7 +140,7 @@ export function getName(code, lang) {
   } catch (err) {
     return undefined;
   }
-};
+}
 
 /*
  * @param lang language for country name
@@ -148,7 +148,7 @@ export function getName(code, lang) {
  */
 export function getNames(lang) {
   return langs[lang.toLowerCase()] || {};
-};
+}
 
 /*
  * @param name name
@@ -170,25 +170,25 @@ export function getAlpha2Code(name, lang) {
   } catch (err) {
     return undefined;
   }
-};
+}
 
 /*
  * @return hash (alpha-2 => alpha-3)
  */
 export function getAlpha2Codes() {
   return alpha2;
-};
+}
 
 /*
  * @return hash (alpha-3 => alpha-2)
  */
 export function getAlpha3Codes() {
   return alpha3;
-};
+}
 
 /*
  * @return hash (numeric => alpha-2)
  */
 export function getNumericCodes() {
   return numeric;
-};
+}

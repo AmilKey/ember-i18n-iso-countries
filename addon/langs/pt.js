@@ -254,4 +254,4 @@ export default {
   "WF": "Wallis e Futuna",
   "ZM": "Zâmbia",
   "ZW": "Zimbábue"
-}
+};

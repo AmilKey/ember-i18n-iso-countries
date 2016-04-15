@@ -248,4 +248,4 @@ export default {
   "RS": "Serbie",
   "SX": "Saint-Martin (partie néerlandaise)",
   "SS": "Sud-Soudan"
-}
+};
