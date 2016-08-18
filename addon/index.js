@@ -7,6 +7,7 @@ import FR from './langs/fr';
 import NL from './langs/nl';
 import PT from './langs/pt';
 import SV from './langs/sv';
+import RU from './langs/ru';
 
 const langs = {
   "de" : DE,
@@ -16,7 +17,8 @@ const langs = {
   "sv" : SV,
   "es" : ES,
   "pt" : PT,
-  "fi" : FI
+  "fi" : FI,
+  "ru" : RU
 };
 
 
