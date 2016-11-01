@@ -1,6 +1,6 @@
 # Ember-i18n-iso-countries
 [![npm version](https://badge.fury.io/js/ember-countries.svg)](https://badge.fury.io/js/ember-i18n-iso-countries)
-[![Ember Observer Score](http://emberobserver.com/badges/ember-countries.svg)](http://emberobserver.com/addons/ember-i18n-iso-countries)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-i18n-iso-countries.svg)](https://emberobserver.com/addons/ember-i18n-iso-countries)
 
 Ember.js Addon Wrapper for the [i18n-iso-countries](https://github.com/michaelwittig/node-i18n-iso-countries).
 
