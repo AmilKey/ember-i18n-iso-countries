@@ -1,4 +1,6 @@
 # Ember-i18n-iso-countries
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/AmilKey/ember-i18n-iso-countries.svg)](https://greenkeeper.io/)
 [![npm version](https://badge.fury.io/js/ember-countries.svg)](https://badge.fury.io/js/ember-i18n-iso-countries)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-i18n-iso-countries.svg)](https://emberobserver.com/addons/ember-i18n-iso-countries)
 
