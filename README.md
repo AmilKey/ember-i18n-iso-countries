@@ -40,6 +40,8 @@ console.log(getNames("en")); // { 'AF': 'Afghanistan', 'AL': 'Albania', [...], '
 * `pt`: portuguese
 * `fi`: finnish
 * `ru`: russian
+* `ar`: arabic
+* `zh`: chinese
 
 ### Country to Code
 
